@@ -1,0 +1,7 @@
+#PBS -N testpy
+#PBS -q gpu
+#PBS -l walltime=40:00:00,mem=4000mb,nodes=1:ppn=1
+#PBS -V
+# User Directives
+source /home/bt1/17CS10038/Intern/bayesFlow/bin/activate
+python /home/bt1/17CS10038/Intern/nn_liklihood/BayesFlow/ddm_flexbound_angle_summary.py
